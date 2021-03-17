@@ -46,7 +46,7 @@ in
   i18n.defaultLocale = "en_US.UTF-8";
 
   # Set your time zone.
-  time.timeZone = "Europe/Warsaw";
+  time.timeZone = "America/New_York";
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -83,7 +83,7 @@ in
    # };
   };
 
-  users.extraGroups.vboxusers.members = [ "gvolpe" ];
+  users.extraGroups.vboxusers.members = [ "jasonk" ];
 
   # Enable sound.
   sound = {
@@ -116,16 +116,16 @@ in
   programs.fish.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.gvolpe = {
+  users.users.jasonk = {
     isNormalUser = true;
     extraGroups  = [ "docker" "networkmanager" "wheel" ]; # wheel for ‘sudo’.
     shell        = pkgs.fish;
   };
 
-  security.sudo.configFile = ''
-    Defaults lecture=always
-    Defaults lecture_file=/etc/nixos/misc/groot.txt
-  '';
+  #security.sudo.configFile = ''
+  #  Defaults lecture=always
+  #  Defaults lecture_file=/etc/nixos/misc/groot.txt
+  #'';
 
   nixpkgs.config.allowUnfree = true;
 
@@ -148,7 +148,7 @@ in
     '';
 
     # Required by Cachix to be used as non-root user
-    trustedUsers = [ "root" "gvolpe" ];
+    trustedUsers = [ "root" "jasonk" ];
   };
 
   # This value determines the NixOS release from which the default
