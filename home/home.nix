@@ -119,9 +119,9 @@ in
   xdg.enable = true;
 
   home = {
-    username      = "gvolpe";
-    homeDirectory = "/home/gvolpe";
-    stateVersion  = "21.03";
+    username      = "jasonk";
+    homeDirectory = "/home/jasonk";
+    # stateVersion  = "21.03";
 
     packages = defaultPkgs ++ gitPkgs ++ gnomePkgs ++ haskellPkgs ++ polybarPkgs ++ scripts ++ xmonadPkgs;
 
