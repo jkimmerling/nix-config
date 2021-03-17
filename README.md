@@ -1,13 +1,7 @@
 nix-config
 ==========
 
-My current - and always evolving - NixOS configuration files, home-manager, neovim, etc.
-
-![desktop](imgs/desktop-1.jpg)
-
-![amd](imgs/amd.jpg)
-
-![themes](imgs/theme.jpg)
+Forked from gvolpe. I am working on getting it to run on my system lol.
 
 ## Programs
 
@@ -65,7 +59,7 @@ Here is an overview of the folders' structure:
 ## Install
 
 On a fresh NixOS installation, run the following commands:
-
+### Not currently fully correct
 ```shell
 mkdir DELETE_ME && cd DELETE_ME
 nix-shell --run \
