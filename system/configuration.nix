@@ -20,7 +20,7 @@ in
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
       # Machine-specific configuration
-      ./machine/current.nix
+      # ./machine/current.nix
       # Window manager 
       ./wm/xmonad.nix
     ];
