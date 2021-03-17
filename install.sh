@@ -33,8 +33,8 @@ cp home/nixos.png $HOME/Pictures/
 home-manager switch
 
 # Set user's profile picture for Gnome3
-sudo cp home/gvolpe.png /var/lib/AccountsService/icons/gvolpe
-sudo echo "Icon=/var/lib/AccountsService/icons/gvolpe" >> /var/lib/AccountsService/users/gvolpe
+sudo cp home/gvolpe.png /var/lib/AccountsService/icons/jasonk
+sudo echo "Icon=/var/lib/AccountsService/icons/jasonk" >> /var/lib/AccountsService/users/jasonk
 
 # Set screenlock wallpaper
 multilockscreen -u home/nixos.png
